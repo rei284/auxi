@@ -145,7 +145,7 @@ async function sendMessage(question) {
   addMessage(question, "user", true); // user messages fully rendered
 
   try {
-    const res = await fetch("http://localhost:3000/api/chat/ask", {
+    const res = await fetch("/api/chat/ask", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ question }),
