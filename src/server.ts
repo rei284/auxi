@@ -17,4 +17,6 @@ fastify.listen({ host: env.HOST, port: env.PORT }, (err) => {
 		fastify.log.error(err);
 		process.exit(1);
 	}
+
+	console.log(`url = ${env.URL}`)
 });
